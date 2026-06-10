@@ -50,7 +50,117 @@ body {
 }
 
 main {
-    min-height: calc(100vh - 80px);
+    min-height: auto;
+}
+
+/* Tarjetas de Productos */
+.product-card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+
+.product-card img {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover img {
+    transform: scale(1.05);
+}
+
+.price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffc107;
+}
+
+/* Tabla de Horarios */
+.table {
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table-dark {
+    background-color: #343a40;
+}
+
+.table tbody tr:hover {
+    background-color: #f0f0f0;
+}
+
+/* Formulario de Contacto */
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #ffc107;
+    box-shadow: 0 0 0 0.2rem rgba(255, 193, 7, 0.25);
+}
+
+.form-label {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+/* Footer */
+footer {
+    background-color: #212529 !important;
+    border-top: 3px solid #ffc107;
+    margin-top: 60px;
+}
+
+footer h5 {
+    font-weight: bold;
+    color: #ffc107;
+    margin-bottom: 15px;
+}
+
+footer p {
+    line-height: 1.8;
+    color: #ccc;
+}
+
+.social-links a {
+    margin-bottom: 8px;
+    transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+    background-color: #ffc107 !important;
+    color: #000 !important;
+    transform: translateY(-2px);
+}
+
+/* Secciones */
+section {
+    scroll-margin-top: 80px;
+}
+
+section h2 {
+    font-weight: bold;
+    color: #212529;
+    margin-bottom: 20px;
 }
 
 /* Estilos responsivos */
@@ -61,5 +171,22 @@ main {
     
     .nav-link {
         margin: 5px 0;
+    }
+
+    .product-card {
+        margin-bottom: 20px;
+    }
+
+    .contact-form {
+        padding: 20px;
+    }
+
+    footer .col-md-4 {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .social-links a {
+        margin: 5px;
     }
 }
